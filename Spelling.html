@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Last Change: 6/6/2021-->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Datatable_CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/SPETable.css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Spelling Check</title>
+    <!-- add icon link -->
+    <link rel="icon" href="images/lion.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--sidebar start-->
+        <aside id="sideMenu">
+            <img src="images/white_logo_dark_background2.jpg" alt="Logo" class="profile_image">
+            <nav>
+                <a href="index.html">
+                    <span><i class="fa fa-tachometer-alt"></i>Main</a>
+                <a href="Notes.html"><i class="fa fa-clipboard"></i>Notes</a>
+                <a href="list.html"><i class="fa fa-bookmark"></i>Work setup</a>
+                <a href="items.html"><i class="fa fa-calendar-check"></i>RA Accounts</a>
+                <a href="landing.html"><i class="fa fa-user"></i>item</a>
+                <a href="myItems.html"><i class="fa fa-cog"></i>Programs</a>
+                <a href="myItems.html" class="active"><i class="fa fa-spell-check"></i>Spelling Check</a>
+            </nav>
+        </aside>
+        <!-- header -->
+        <header>
+            <div class="search-area">
+                <i class="fas fa-search"></i>
+                <input type="text">
+            </div>
+            <div class="user-area">
+                <a href="#" class="add">Admin Pannel</a>
+                <a href="#" class="notification">
+                    <i class="far fa-bell"></i>
+                    <span class="circle">1</span>
+                </a>
+                <a href="#">
+                    <div class="user-img"></div>
+                    <i class="fas fa-caret-down"></i>
+                </a>
+            </div>
+        </header>
+
+
+        <!--Table Date-->
+        <div class="container" id="main-content" style="margin-top: 3em">
+            <table class="table table-bordered mydatatable nowrap" cellspacing="0" width="100%">
+                <thead>
+                    <tr class="text-center">
+                        <td class="head">My mispelled Words</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>ability </td>
+                    </tr>
+                    <tr>
+                        <td>accessible</td>
+                    </tr>
+                    <tr>
+                        <td>appreciated</td>
+                    </tr>
+                    <tr>
+                        <td>assistance</td>
+                    </tr>
+                    <tr>
+                        <td>authentication
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>available</td>
+                    </tr>
+                    <tr>
+                        <td>answer&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>appreciate&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Abbreviation</td>
+                    </tr>
+                    <tr>
+                        <td>available</td>
+                    </tr>
+                    <tr>
+                        <td>authorized</td>
+                    </tr>
+                    <tr>
+                        <td>according</td>
+                    </tr>
+                    <tr>
+                        <td>available </td>
+                    </tr>
+                    <tr>
+                        <td>authenticate</td>
+                    </tr>
+                    <tr>
+                        <td>authentication</td>
+                    </tr>
+                    <tr>
+                        <td>associated&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>appears</td>
+                    </tr>
+                    <tr>
+                        <td>available&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>allow</td>
+                    </tr>
+                    <tr>
+                        <td>availability</td>
+                    </tr>
+                    <tr>
+                        <td>allowed</td>
+                    </tr>
+                    <tr>
+                        <td>accuracy</td>
+                    </tr>
+                    <tr>
+                        <td>allow </td>
+                    </tr>
+                    <tr>
+                        <td>authenticate
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Authorize</td>
+                    </tr>
+                    <tr>
+                        <td>appreciate
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>beliefs</td>
+                    </tr>
+                    <tr>
+                        <td>broader</td>
+                    </tr>
+                    <tr>
+                        <td>Bicycles</td>
+                    </tr>
+                    <tr>
+                        <td>balanced</td>
+                    </tr>
+                    <tr>
+                        <td>catch </td>
+                    </tr>
+                    <tr>
+                        <td>Chance</td>
+                    </tr>
+                    <tr>
+                        <td>columns</td>
+                    </tr>
+                    <tr>
+                        <td>complement&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>clarfiction
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>check</td>
+                    </tr>
+                    <tr>
+                        <td>credentials</td>
+                    </tr>
+                    <tr>
+                        <td>curious </td>
+                    </tr>
+                    <tr>
+                        <td>cultures</td>
+                    </tr>
+                    <tr>
+                        <td>concepts</td>
+                    </tr>
+                    <tr>
+                        <td>courageous</td>
+                    </tr>
+                    <tr>
+                        <td>conversation
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Commutating</td>
+                    </tr>
+                    <tr>
+                        <td>connection</td>
+                    </tr>
+                    <tr>
+                        <td>compatible
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>cellular</td>
+                    </tr>
+                    <tr>
+                        <td>communicating</td>
+                    </tr>
+                    <tr>
+                        <td>credentials</td>
+                    </tr>
+                    <tr>
+                        <td>communication
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>commercials
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>convenience</td>
+                    </tr>
+                    <tr>
+                        <td>credential</td>
+                    </tr>
+                    <tr>
+                        <td>Circuit&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Cancelled</td>
+                    </tr>
+                    <tr>
+                        <td>development</td>
+                    </tr>
+                    <tr>
+                        <td>Devilment</td>
+                    </tr>
+                    <tr>
+                        <td>duplicate</td>
+                    </tr>
+                    <tr>
+                        <td>duplicating
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Diagnostics</td>
+                    </tr>
+                    <tr>
+                        <td>determine</td>
+                    </tr>
+                    <tr>
+                        <td>designed</td>
+                    </tr>
+                    <tr>
+                        <td>deauthorized</td>
+                    </tr>
+                    <tr>
+                        <td>eloquently&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>exist </td>
+                    </tr>
+                    <tr>
+                        <td>experiencing
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>efficient</td>
+                    </tr>
+                    <tr>
+                        <td>Escalations</td>
+                    </tr>
+                    <tr>
+                        <td>exception</td>
+                    </tr>
+                    <tr>
+                        <td>elaborate </td>
+                    </tr>
+                    <tr>
+                        <td>experiencing</td>
+                    </tr>
+                    <tr>
+                        <td>en route</td>
+                    </tr>
+                    <tr>
+                        <td>Failure</td>
+                    </tr>
+                    <tr>
+                        <td>feather</td>
+                    </tr>
+                    <tr>
+                        <td>Focus</td>
+                    </tr>
+                    <tr>
+                        <td>following </td>
+                    </tr>
+                    <tr>
+                        <td>further</td>
+                    </tr>
+                    <tr>
+                        <td>fluctuation</td>
+                    </tr>
+                    <tr>
+                        <td>function</td>
+                    </tr>
+                    <tr>
+                        <td>fictitious
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>functionality</td>
+                    </tr>
+                    <tr>
+                        <td>familiar</td>
+                    </tr>
+                    <tr>
+                        <td>globally </td>
+                    </tr>
+                    <tr>
+                        <td>Gentlemen</td>
+                    </tr>
+                    <tr>
+                        <td>hibernia</td>
+                    </tr>
+                    <tr>
+                        <td>heard</td>
+                    </tr>
+                    <tr>
+                        <td>intermittent</td>
+                    </tr>
+                    <tr>
+                        <td>intermittently</td>
+                    </tr>
+                    <tr>
+                        <td>increment</td>
+                    </tr>
+                    <tr>
+                        <td>investigating</td>
+                    </tr>
+                    <tr>
+                        <td>intervals</td>
+                    </tr>
+                    <tr>
+                        <td>incrementing</td>
+                    </tr>
+                    <tr>
+                        <td>integrity</td>
+                    </tr>
+                    <tr>
+                        <td>Interference
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>inconvenience</td>
+                    </tr>
+                    <tr>
+                        <td>incrementing
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>interruption
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>investigation</td>
+                    </tr>
+                    <tr>
+                        <td>initial</td>
+                    </tr>
+                    <tr>
+                        <td>knowledge </td>
+                    </tr>
+                    <tr>
+                        <td>labeled </td>
+                    </tr>
+                    <tr>
+                        <td>Logged</td>
+                    </tr>
+                    <tr>
+                        <td>Logical</td>
+                    </tr>
+                    <tr>
+                        <td>Legacy</td>
+                    </tr>
+                    <tr>
+                        <td>noticed </td>
+                    </tr>
+                    <tr>
+                        <td>notorious </td>
+                    </tr>
+                    <tr>
+                        <td>obtained</td>
+                    </tr>
+                    <tr>
+                        <td>opinioun</td>
+                    </tr>
+                    <tr>
+                        <td>occurrence
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>occurrences</td>
+                    </tr>
+                    <tr>
+                        <td>optimized</td>
+                    </tr>
+                    <tr>
+                        <td>Prioritize</td>
+                    </tr>
+                    <tr>
+                        <td>Possibly </td>
+                    </tr>
+                    <tr>
+                        <td>physical</td>
+                    </tr>
+                    <tr>
+                        <td>Provisioning</td>
+                    </tr>
+                    <tr>
+                        <td>premium </td>
+                    </tr>
+                    <tr>
+                        <td>picture</td>
+                    </tr>
+                    <tr>
+                        <td>Propagate </td>
+                    </tr>
+                    <tr>
+                        <td>Provide</td>
+                    </tr>
+                    <tr>
+                        <td>potential </td>
+                    </tr>
+                    <tr>
+                        <td>purposes</td>
+                    </tr>
+                    <tr>
+                        <td>questionnaire</td>
+                    </tr>
+                    <tr>
+                        <td>reason</td>
+                    </tr>
+                    <tr>
+                        <td>reference</td>
+                    </tr>
+                    <tr>
+                        <td>requirements</td>
+                    </tr>
+                    <tr>
+                        <td>resolution
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>refer</td>
+                    </tr>
+                    <tr>
+                        <td>replicate</td>
+                    </tr>
+                    <tr>
+                        <td>re-groom </td>
+                    </tr>
+                    <tr>
+                        <td>reclamation</td>
+                    </tr>
+                    <tr>
+                        <td>recently</td>
+                    </tr>
+                    <tr>
+                        <td>random</td>
+                    </tr>
+                    <tr>
+                        <td>Reference</td>
+                    </tr>
+                    <tr>
+                        <td>reconvene</td>
+                    </tr>
+                    <tr>
+                        <td>Resolved </td>
+                    </tr>
+                    <tr>
+                        <td>resolution
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Reseated</td>
+                    </tr>
+                    <tr>
+                        <td>Surveillance</td>
+                    </tr>
+                    <tr>
+                        <td>severity&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>specific </td>
+                    </tr>
+                    <tr>
+                        <td>squeaky&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>suppose</td>
+                    </tr>
+                    <tr>
+                        <td>Sing</td>
+                    </tr>
+                    <tr>
+                        <td>specific</td>
+                    </tr>
+                    <tr>
+                        <td>subscription</td>
+                    </tr>
+                    <tr>
+                        <td>thumbnail</td>
+                    </tr>
+                    <tr>
+                        <td>training</td>
+                    </tr>
+                    <tr>
+                        <td>troubleshooting</td>
+                    </tr>
+                    <tr>
+                        <td>temporarily</td>
+                    </tr>
+                    <tr>
+                        <td>threshold </td>
+                    </tr>
+                    <tr>
+                        <td>unavailable</td>
+                    </tr>
+                    <tr>
+                        <td>Unentitled</td>
+                    </tr>
+                    <tr>
+                        <td>utilization</td>
+                    </tr>
+                    <tr>
+                        <td>verify</td>
+                    </tr>
+                    <tr>
+                        <td>verified</td>
+                    </tr>
+                    <tr>
+                        <td>verification
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>wondered </td>
+                    </tr>
+                    <tr>
+                        <td>writing </td>
+                    </tr>
+                    <tr>
+                        <td>watched</td>
+                    </tr>
+                    <tr>
+                        <td>wisdom</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+                <![if supportMisalignedColumns]>
+                <tr height=0 style='display:none'>
+                    <td width=247 style='width:185pt'></td>
+                    <td width=212 style='width:159pt'></td>
+                    <td width=218 style='width:164pt'></td>
+                </tr>
+                <![endif]>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Datetable_script -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.mydatatable').DataTable({
+
+                "scrollY": '50vh',
+                "scrollX": true
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- add icon link -->
+    <link rel="icon" href="images/lion.jpg" type="image/x-icon">
+    <title>Derek Admin</title>
+</head>
+
+<body>
+    <!--sidebar start-->
+    <aside id="sideMenu">
+        <img src="images/white_logo_dark_background2.jpg" alt="Logo" class="profile_image">
+        <nav>
+            <a href="index.html"><i class="fa fa-tachometer-alt"></i>Main</a>
+            <a href="Notes.html" class="active"><i class="fa fa-clipboard"></i>Notes</a>
+            <a href="list.html"><i class="fa fa-bookmark"></i>Work setup</a>
+            <a href="items.html"><i class="fa fa-calendar-check"></i>RA Accounts</a>
+            <a href="landing.html"><i class="fa fa-user"></i>item</a>
+            <a href="myItems.html"><i class="fa fa-cog"></i>Programs</a>
+            <a href="myItems.html"><i class="fa fa-spell-check"></i>Spelling Check</a>
+        </nav>
+    </aside>
+    <!-- header -->
+    <header>
+        <div class="search-area">
+            <i class="fa fa-book"></i>
+            <input type="text">
+        </div>
+        <div class="user-area">
+            <a href="#" class="add">Derek's Notes</a>
+            <a href="#" class="notification">
+                <i class="far fa-bell"></i>
+                <span class="circle">1</span>
+            </a>
+            <a href="#">
+                <div class="user-img"></div>
+                <i class="fas fa-caret-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <!--Main section -->
+    <section class="container" id="notes-modal-area">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Information
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!-- Button1 -->
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Approval templet</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="notes-sec2">
+        <div class="accordion" id="accordionExample">
+            <div class="card bg-dark text-light">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h3>Mgr, approval ISC/NTF</h3>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        NOC Manager reviewed and approved closing the issue as Issue Self Cleared
+                        <hr>
+                        NOC Manager reviewed and approved closing the issue as No Trouble Found
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark text-light">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h3>CRQ call out process</h3>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Call out process was done by EMAIL.<br>
+
+                        Was the task completed successfully?<br>
+
+                        Were all applications and systems impacted by this change activity validated?<br>
+
+                        Was there additional Impact?<br>
+
+                        Was the work completed before the Scheduled End Time?<br>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark text-light">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h3>Another templet</h3>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3 mt-4">
+            <label for="validationTextarea"></label>
+            <textarea class="form-control is-invalid" id="validationTextarea" rows="13" placeholder="Type Notes here"
+                required></textarea>
+            <div class="invalid-feedback">
+                Notes textarea.
+            </div>
+    </section>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+
+    <body>
+
+    </body>
+
+</html>
